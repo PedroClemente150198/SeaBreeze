@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeaBreaze Studio</title>
+    <link rel="shortcut icon" href="ASSET/blanco _1seabreeze.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/widget.css">
+    <link rel="stylesheet" href="CSS/inicio.css">
+
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <script> let texto = "Bien venido a See Breeze studio";
+    
+        const hablar = (texto) => {
+            let utterance = new SpeechSynthesisUtterance(texto);
+            speechSynthesis.speak(utterance);
+        };
+    
+        window.addEventListener('DOMContentLoaded', hablar(texto));</script>
+</head>
+<body>
+<!--! ======================================================================= -->
+<!--! 						Estrucctura de menu de navegacion				  -->
+<!--! ======================================================================= -->
+<!-- Barra de navegacion responsiva -->
+<div class="boton-menu" id="boton-menu">
+    <div class="barra"></div>
+    <div class="barra"></div>
+    <div class="barra"></div>
+</div>
+<!-- Barra de Navegacion normal -->
+<div class="bacground" id="bacground">
+    <img src="ASSET/blanco _1seabreeze.png" alt="Logo de SeaBreaze" class="icono-logo">
+</div>
+<nav class="menu" id="menu">
+    <ul>
+        <img src="ASSET/blanco _1seabreeze.png" alt="Logo de SeaBreaze" class="icono-logo" id="miImagen"  onmouseover="hacerMasGrande()" onmouseout="restaurarTamaño()">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="subitem">
+            <a href="#">Productos</a>
+            <ul>
+                <li><a href="/../SeaBreazeStudio/pag/Carrucel.html" target="widgetFrame">Paginas Webs</a></li>
+                <li><a href="#" target="widgetFrame">Video Públicitarios</a></li>
+                <li><a href="#" target="widgetFrame">Streaming</a></li>
+            </ul>
+        </li>
+        <li class="subitem">
+            <a href="#">Servicios</a>
+            <ul>
+                <li><a href="#" target="widgetFrame">Manejo de Redes Sociales</a></li>
+                <li><a href="#" target="widgetFrame">Producción Audio Visual</a></li>
+                <li><a href="#" target="widgetFrame">Marketing</a></li>
+                <li><a href="#" target="widgetFrame">Diseño Gráfico</a></li>
+                <li><a href="#" target="widgetFrame">Sesión de Fotos</a></li>
+            </ul>
+        </li>
+        <li class="subitem">
+            <a href="#">Medios de Comunicación Digital</a>
+            <ul>
+                <li><a href="#" target="widgetFrame"> - Medio de Comunicacin La Espina.</a></li>
+                <li><a href="#" target="widgetFrame"> - Revista Digital de American Change. </a></li>
+            </ul>
+        </li>
+        <li><a href="#" target="widgetFrame">Acerca de</a></li>
+        <li><a href="#" target="widgetFrame">Contacto</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <div class="parallax">
+            <img src="/../SeaBreazeStudio/ASSET/blanco _1seabreeze.png" alt="Imagen 3D" class="transparente">
+        </div>
+        <div class="content">
+            <h1 style="font-size: 35px; font-weight: bold; color: red;">AMERICAN CHANGE</h1>
+            <h1 style="font-size: 35px; font-weight: bold; color: blue;">LA ESPINA</h1>
+            <!-- <p>¡Esta es una imagen 3D transparente en HTML!</p> -->
+        </div>
+    </section>
+    <iframe name="widgetFrame" class="widget-frame" src="./pag/Carrucel.html"></iframe>
+</main>
+<script src="JS/activacionmenu.js"></script>
+</body>
+</html>

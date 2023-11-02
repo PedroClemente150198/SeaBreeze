@@ -1,0 +1,161 @@
+/* ======================================================================================================
+Derechos de Autor reservados por la empresa Sea Breaze Studio.
+A cargo del jefe de desarrollo Pedro Anthony Clemente Panchana.
+Fecha de Comienzo del Proyecto 12/10/2023.
+Email: pedro_clemente48@hotmail.com
+Fecha de Culminacion y entrega No Prevista al momento.
+========================================================================================================= */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    /* background-color: #0e003073; */
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.icono-logo{
+    width: 30px;
+    height: 30px;
+    margin: 3px auto 0 50px;
+}
+.menu{
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    top: 0;
+    z-index: 999999;
+}
+
+/* Estilos del menú */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    z-index: 9999;
+}
+
+.menu li {
+    position: relative;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: #333333;
+    color: #fff;
+    z-index: 9999;
+}
+
+.menu li:hover {
+    background-color: #555;
+    z-index: 9999;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    z-index: 9999;
+}
+
+/* Estilos de los subitems */
+.subitem ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    left: 0;
+    top: 100%;
+    z-index: 9999;
+}
+
+.subitem:hover ul {
+    display: block;
+    z-index: 9999;
+}
+
+.subitem ul li {
+    padding: 10px;
+    background-image: linear-gradient(45deg, #333333a1, #036275b3);
+    z-index: 9999;
+}
+.bacground{
+    display: none;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .bacground{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        background-color: #333333;
+        margin: auto;
+    }
+    .icono-logo{
+        /* margin: auto; */
+        transform: translateX(175px);
+        margin: 7px auto;
+    }
+
+    .bacground.active{
+        background-color: #30303000;
+    }
+    /* Estilos del botón de menú (hamburguesa) */
+	.boton-menu {
+		cursor: pointer;
+		display: flex;
+		position: absolute;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 30px;
+		height: 20px;
+        margin: 10px;
+	}
+	.boton-menu:hover{
+		background-color: #00d0ff;
+	}
+
+	.barra {
+		background-color: #afa6a6;
+		height: 4px;
+		width: 100%;
+		transition: 0.4s;
+	}
+    .menu ul {
+        display: none;
+        flex-direction: column;
+    }
+    .menu ul .icono-logo{
+        margin: 7px 0.5px;
+    }
+    .menu.active ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .subitem ul {
+        position: static;
+        display: none;
+    }
+
+    .subitem:hover ul {
+        display: block;
+    }
+    #menu ul .subitem ul{
+        display: none;
+    }
+    #menu ul .subitem:hover ul {
+        display: block;
+    }
+}

@@ -1,0 +1,63 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    /* background-color: #0e003073; */
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+/* Estilos para el marco del widget */
+.widget-frame {
+    position: absolute;
+    top: 40px;
+    width: calc(100% - 250px);
+    height: 580px;
+    width: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.66);
+    z-index: -9999999;
+    animation: CambiarColor 10.5s ease-in-out infinite!important;
+}
+
+@keyframes CambiarColor {
+    0%{
+        background-color: rgba(0, 0, 0, 0.45);
+    }
+    10% {
+        background-color: rgba(0, 0, 0, 0.846);
+    }
+    20% {
+        background-color: rgba(2, 59, 67, 0.809);
+    }
+    30% {
+        background-color: rgba(2, 59, 67, 0.809);
+    }
+    40% {
+        background-color:  rgb(2, 59, 67);
+    }
+    50% {
+        background-color: rgba(2, 59, 67, 0.809);
+    }
+    60% {
+        background-color: rgba(0, 0, 0, 0.846);
+    }
+    70% {
+        background-color: rgba(0, 0, 0, 0.45);
+    }
+    80% {
+        background-color:  rgba(2, 59, 67, 0.672);
+    }
+    90% {
+        background-color: rgba(2, 59, 67, 0.809);;
+    }
+    100% {
+        background-color:  rgba(2, 59, 67, 0.809);
+    }
+}
