@@ -1,2 +1,3 @@
 # SeaBreeze
-Nuevas Versiones de desarrollo
+-02/11/2023
+Nuevas Versiones de desarrollo Fase Beta de Prueba para mi compañia...
